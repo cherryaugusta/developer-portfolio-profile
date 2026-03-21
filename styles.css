@@ -262,6 +262,12 @@ hr{
   padding:4rem 0 3rem;
 }
 
+.hero h1,
+.page-hero h1{
+  color:#f8fbff;
+  text-shadow:0 2px 18px rgba(0,0,0,.22);
+}
+
 .hero-grid{
   display:grid;
   grid-template-columns:1.35fr .9fr;
@@ -359,13 +365,14 @@ hr{
   overflow:hidden;
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
+  max-width:520px;
 }
 
 .profile-photo{
   width:100%;
-  aspect-ratio:1 / 1;
+  aspect-ratio:5 / 4;
   object-fit:cover;
-  object-position:center;
+  object-position:center 20%;
   border-radius:18px;
   background:#12213a;
   box-shadow:var(--shadow-xs);
@@ -386,6 +393,12 @@ hr{
   color:#eef4ff;
   font-size:.88rem;
   font-weight:600;
+}
+
+.hero-aside .profile-card,
+.about-profile-card{
+  width:100%;
+  justify-self:center;
 }
 
 .hero-panel{
@@ -574,7 +587,7 @@ hr{
 }
 
 .project-list-page{
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:1fr;
 }
 
 .project-card{
@@ -591,6 +604,10 @@ hr{
   grid-column:span 2;
 }
 
+.project-list-page .project-card-featured{
+  grid-column:span 1;
+}
+
 .project-card-with-image{
   padding:0;
   overflow:hidden;
@@ -605,6 +622,11 @@ hr{
 
 .project-image-wrap-large{
   aspect-ratio:16 / 8.5;
+}
+
+.project-list-page .project-image-wrap,
+.project-list-page .project-image-wrap-large{
+  aspect-ratio:16 / 10;
 }
 
 .project-image-wrap img{
@@ -731,12 +753,14 @@ hr{
 
 .about-profile-card{
   overflow:hidden;
+  max-width:520px;
 }
 
 .about-profile-photo{
   width:100%;
-  aspect-ratio:1 / 1;
+  aspect-ratio:5 / 4;
   object-fit:cover;
+  object-position:center 20%;
   border-radius:16px;
   margin-bottom:1.2rem;
   background:#e8eef9;
