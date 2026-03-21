@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Cherry Augusta</title>
+  <meta name="description" content="Software engineering projects by Cherry Augusta, including LawPulse, GreenOps, TradeFlow, EcoRoute LEZ Optimiser, OpsSentinel, PolicyPulse, FinCrime GraphOps, and LondonPlan RAG.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Projects | Cherry Augusta">
+  <meta property="og:description" content="Selected full-stack and backend projects featuring Django, DRF, Angular, React, TypeScript, PostgreSQL, Redis, Docker, WebSockets, and Celery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cherryaugusta.github.io/developer-portfolio-profile/projects.html">
+  <meta property="og:image" content="https://cherryaugusta.github.io/developer-portfolio-profile/assets/og-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Cherry Augusta">
+  <meta name="twitter:description" content="Selected full-stack and backend projects featuring Django, DRF, Angular, React, TypeScript, PostgreSQL, Redis, Docker, WebSockets, and Celery.">
+  <meta name="twitter:image" content="https://cherryaugusta.github.io/developer-portfolio-profile/assets/og-preview.jpg">
+  <link rel="canonical" href="https://cherryaugusta.github.io/developer-portfolio-profile/projects.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Cherry Augusta home">Cherry Augusta</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Projects</p>
+        <h1>Selected Projects</h1>
+        <p class="page-lead">A portfolio of full-stack and backend-focused work demonstrating API design, Angular and React frontend delivery, typed integration, Python and SQL-backed development, real-time behaviour, scheduled processing, secure defaults, and reproducible local setup.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-kicker">Top tier</p>
+          <h2>Projects most relevant to software engineering roles</h2>
+        </div>
+
+        <div class="project-list project-list-page">
+          <article class="project-card project-card-featured project-card-with-image">
+            <div class="project-image-wrap project-image-wrap-large">
+              <img src="screenshots/lawpulse/frontend-selected-clause.png" alt="LawPulse contract review interface with selected clause details visible" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Top project</span>
+                <span class="pill pill-muted">Full-Stack</span>
+                <span class="pill pill-outline">React + WebSockets</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/lawpulse.git" target="_blank" rel="noopener noreferrer">LawPulse</a></h2>
+              <p class="stack">Django · DRF · Channels · React · TypeScript · Redis · PostgreSQL · Docker Compose</p>
+              <p>AI-powered legal document auditor for uploading PDF contracts, extracting risky clauses, and reviewing them in a side-by-side interface.</p>
+              <ul>
+                <li><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/lawpulse.git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>PDF upload and page-level text extraction workflow</li>
+                <li>Live processing updates streamed over WebSockets</li>
+                <li>Strict TypeScript frontend with side-by-side reviewer UI</li>
+                <li>OpenAPI docs, root health endpoint, and latency middleware</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/greenops/frontend-dashboard.png" alt="GreenOps dashboard showing ESG reporting charts and KPI summaries" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">Full-Stack</span>
+                <span class="pill pill-outline">Audit trail</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/greenops-carbon-accounting-platform.git" target="_blank" rel="noopener noreferrer">GreenOps</a></h2>
+              <p class="stack">Django · DRF · React · TypeScript · PostgreSQL · Redis · JWT · Docker Compose</p>
+              <p>Corporate carbon footprint calculator for internal ESG reporting with authenticated workflows, audit history, admin oversight, reporting dashboard, and drag-and-drop reporting.</p>
+              <ul>
+                <li><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/greenops-carbon-accounting-platform.git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>JWT-secured API and manager approval workflow</li>
+                <li>Audit trail with django-simple-history</li>
+                <li>Multi-step validated form with React Hook Form and Zod</li>
+                <li>Dashboard analytics and drag-and-drop report builder</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/tradeflow/frontend-dashboard.png" alt="TradeFlow dashboard showing arbitrage opportunities and market data table" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">Full-Stack</span>
+                <span class="pill pill-outline">Celery</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/TradeFlow.git" target="_blank" rel="noopener noreferrer">TradeFlow</a></h2>
+              <p class="stack">Django · DRF · React · TypeScript · Celery · Redis · PostgreSQL · Docker Compose</p>
+              <p>Multi-source arbitrage tracker that polls mock exchanges, stores historical snapshots, computes opportunities, and presents results in a React dashboard.</p>
+              <ul>
+                <li><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/TradeFlow.git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>Scheduled polling with Celery Beat every 5 seconds</li>
+                <li>Historical price snapshots and hourly spread analytics</li>
+                <li>React + TypeScript dashboard with TanStack Table</li>
+                <li>Latency middleware, OpenAPI docs, and Docker Compose stack</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/ecoroute/angular-home-health-compute.png" alt="EcoRoute LEZ Optimiser interface showing route input, health information, and computed output" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">API + Angular</span>
+                <span class="pill pill-outline">OpenAPI-first</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/EcoRoute-LEZ-Optimiser.git" target="_blank" rel="noopener noreferrer">EcoRoute LEZ Optimiser</a></h2>
+              <p class="stack">Django · DRF · Angular · TypeScript · PostgreSQL/PostGIS · Redis · Docker</p>
+              <p>Routing and compliance project for LEZ and ULEZ-style scenarios with deterministic audit responses, typed contracts, and governance-aware development patterns.</p>
+              <ul>
+                <li><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/EcoRoute-LEZ-Optimiser.git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>Deterministic route-audit compute endpoint</li>
+                <li>Strict Angular integration and OpenAPI-first backend design</li>
+                <li>Correlation ID propagation and dependency auditing</li>
+                <li>ADRs, governance artefacts, and Docker reproducibility</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/opssentinel/frontend-dashboard.png" alt="OpsSentinel dashboard showing anomaly and incident monitoring" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">Real-Time</span>
+                <span class="pill pill-outline">Channels + Celery</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/OpsSentinel.git" target="_blank" rel="noopener noreferrer">OpsSentinel</a></h2>
+              <p class="stack">Django · DRF · Channels · Celery · Angular · PostgreSQL · Redis · Docker Compose</p>
+              <p>Real-time anomaly and incident console demonstrating explainable SecOps architecture and event-driven workflows.</p>
+              <ul>
+                <li><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/OpsSentinel.git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>Synthetic log event ingestion and anomaly detection</li>
+                <li>Incidents with explainability artefacts</li>
+                <li>WebSocket event flow and periodic evaluation jobs</li>
+                <li>Security-aware defaults, quality gates, and Docker verification</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/policypulse/frontend-home.png" alt="PolicyPulse Angular frontend for decision submission and review" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">API + Angular</span>
+                <span class="pill pill-outline">Typed contracts</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/policypulse.git" target="_blank" rel="noopener noreferrer">PolicyPulse</a></h2>
+              <p class="stack">Django · DRF · Angular · TypeScript · OpenAPI</p>
+              <p>Decisioning application with a strong API, typed frontend-backend contracts, health checks, tracing, and governance scaffolding.</p>
+              <ul>
+                <li><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/policypulse.git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>Typed decision submission and deterministic review outcome</li>
+                <li>Health endpoint with dependency-aware readiness reporting</li>
+                <li>Correlation ID tracing and DRF documentation</li>
+                <li>AI governance scaffolding and structured monorepo layout</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-kicker">Supporting architecture and governance projects</p>
+          <h2>Additional supporting work</h2>
+        </div>
+
+        <div class="project-list project-list-page">
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/fincrime-graphops/frontend-home.png" alt="FinCrime GraphOps frontend showing sanctions and ownership risk exploration" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Supporting</span>
+                <span class="pill pill-muted">Architecture</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/fincrime-graphops.git" target="_blank" rel="noopener noreferrer">FinCrime GraphOps</a></h2>
+              <p class="stack">Django · DRF · Angular · TypeScript · PostgreSQL · Redis · Docker</p>
+              <p>FinTech architecture project demonstrating secure defaults, typed API contracts, health validation, correlation IDs, and governance scaffolding.</p>
+              <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/fincrime-graphops.git" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card project-card-with-image">
+            <div class="project-image-wrap">
+              <img src="screenshots/londonplan-rag/angular-health-page.png" alt="LondonPlan RAG Angular application interface" width="1600" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Supporting</span>
+                <span class="pill pill-muted">Architecture</span>
+              </div>
+              <h2><a href="https://github.com/cherryaugusta/londonplan-rag-architecture.git" target="_blank" rel="noopener noreferrer">LondonPlan RAG</a></h2>
+              <p class="stack">Django · DRF · Angular · TypeScript · PostgreSQL/PostGIS · Redis</p>
+              <p>Educational architecture project showing regulated-style patterns, generated-client preparation, OpenAPI contract locking, and governance-aware implementation.</p>
+              <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/londonplan-rag-architecture.git" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="pill">Supporting</span>
+              <span class="pill pill-muted">Frontend</span>
+            </div>
+            <h2><a href="https://github.com/cherryaugusta/scroll-cta-highlight-portfolio" target="_blank" rel="noopener noreferrer">Scroll CTA Highlight Portfolio</a></h2>
+            <p class="stack">React · TypeScript · Testing · Accessibility · CI</p>
+            <p>Focused frontend project that strengthens React, UI, accessibility, and testing evidence within the wider portfolio.</p>
+            <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/scroll-cta-highlight-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="pill">Supporting</span>
+              <span class="pill pill-muted">Python</span>
+            </div>
+            <h2><a href="https://github.com/cherryaugusta/weather-analytics" target="_blank" rel="noopener noreferrer">Weather Analytics System</a></h2>
+            <p class="stack">Python · Testing · CI</p>
+            <p>Python project demonstrating structured application design, testing discipline, and maintainable backend-oriented code organisation.</p>
+            <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/weather-analytics" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="pill">Supporting</span>
+              <span class="pill pill-muted">Python</span>
+            </div>
+            <h2><a href="https://github.com/cherryaugusta/advanced-python-calculator" target="_blank" rel="noopener noreferrer">Advanced Python Calculator</a></h2>
+            <p class="stack">Python · OOP · Validation · Pytest · CLI</p>
+            <p>Smaller Python project retained as supporting evidence for fundamentals, validation logic, and automated testing.</p>
+            <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/advanced-python-calculator" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="pill">Supporting</span>
+              <span class="pill pill-muted">Analytics</span>
+            </div>
+            <h2><a href="https://github.com/cherryaugusta/GloBox_A-B_Testing_Analysis" target="_blank" rel="noopener noreferrer">GloBox A/B Testing Analysis</a></h2>
+            <p class="stack">SQL · Python · Analysis</p>
+            <p>Supporting analytical project retained as secondary evidence of SQL work, structured reasoning, and data interpretation.</p>
+            <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/GloBox_A-B_Testing_Analysis" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="pill">Supporting</span>
+              <span class="pill pill-muted">ML</span>
+            </div>
+            <h2><a href="https://github.com/cherryaugusta/Credit-Card-Customer-Segmentation" target="_blank" rel="noopener noreferrer">Credit Card Customer Segmentation</a></h2>
+            <p class="stack">Python · Machine Learning · Data Preparation</p>
+            <p>Historical project retained as background evidence, but intentionally de-emphasised relative to current full-stack software engineering work.</p>
+            <p><strong>Repository:</strong> <a href="https://github.com/cherryaugusta/Credit-Card-Customer-Segmentation" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container cta-panel">
+        <div>
+          <p class="section-kicker section-kicker-light">CV</p>
+          <h2>View the CV for a compact summary of skills, projects, and training</h2>
+          <p>It brings together core skills, selected projects, experience, and training in a format suited to quick review.</p>
+        </div>
+        <div class="cta-panel-actions">
+          <a class="button button-primary" href="cv.html">View CV</a>
+          <a class="button button-secondary" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <p class="footer-title">Cherry Augusta</p>
+        <p>Full-stack and backend web application portfolio built with plain HTML, CSS, and JavaScript for GitHub Pages.</p>
+      </div>
+      <div>
+        <p><a href="https://github.com/cherryaugusta" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/cherry-augusta-3957a916" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p><a href="mailto:cherryaugusta@gmail.com">cherryaugusta@gmail.com</a></p>
+      </div>
+      <div>
+        <p>London, United Kingdom</p>
+        <p>© <span id="current-year">2026</span> Cherry Augusta</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
