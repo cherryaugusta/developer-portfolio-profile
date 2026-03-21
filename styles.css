@@ -365,14 +365,14 @@ hr{
   overflow:hidden;
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
-  max-width:520px;
+  max-width:620px;
 }
 
 .profile-photo{
   width:100%;
-  aspect-ratio:5 / 4;
+  aspect-ratio:16 / 10;
   object-fit:cover;
-  object-position:center 20%;
+  object-position:center 18%;
   border-radius:18px;
   background:#12213a;
   box-shadow:var(--shadow-xs);
@@ -588,6 +588,7 @@ hr{
 
 .project-list-page{
   grid-template-columns:1fr;
+  gap:1.6rem;
 }
 
 .project-card{
@@ -626,7 +627,8 @@ hr{
 
 .project-list-page .project-image-wrap,
 .project-list-page .project-image-wrap-large{
-  aspect-ratio:16 / 10;
+  aspect-ratio:16 / 8;
+  min-height:420px;
 }
 
 .project-image-wrap img{
@@ -753,14 +755,14 @@ hr{
 
 .about-profile-card{
   overflow:hidden;
-  max-width:520px;
+  max-width:620px;
 }
 
 .about-profile-photo{
   width:100%;
-  aspect-ratio:5 / 4;
+  aspect-ratio:16 / 10;
   object-fit:cover;
-  object-position:center 20%;
+  object-position:center 18%;
   border-radius:16px;
   margin-bottom:1.2rem;
   background:#e8eef9;
@@ -881,6 +883,11 @@ hr{
     flex-direction:column;
     align-items:flex-start;
   }
+
+  .project-list-page .project-image-wrap,
+  .project-list-page .project-image-wrap-large{
+    min-height:360px;
+  }
 }
 
 @media (max-width:760px){
@@ -949,6 +956,17 @@ hr{
   .cta-panel-actions .button{
     width:100%;
   }
+
+  .project-list-page .project-image-wrap,
+  .project-list-page .project-image-wrap-large{
+    aspect-ratio:16 / 9;
+    min-height:280px;
+  }
+
+  .profile-card,
+  .about-profile-card{
+    max-width:100%;
+  }
 }
 
 @media (max-width:560px){
@@ -977,6 +995,16 @@ hr{
 
   .metric{
     padding:.85rem .9rem;
+  }
+
+  .profile-photo,
+  .about-profile-photo{
+    aspect-ratio:16 / 11;
+  }
+
+  .project-list-page .project-image-wrap,
+  .project-list-page .project-image-wrap-large{
+    min-height:220px;
   }
 }
 
