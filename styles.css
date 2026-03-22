@@ -282,6 +282,7 @@ hr{
 
 .hero-grid-enhanced{
   grid-template-columns:1.18fr .96fr;
+  align-items:stretch;
 }
 
 .hero-copy{
@@ -293,6 +294,7 @@ hr{
   display:grid;
   gap:1rem;
   align-content:start;
+  align-self:stretch;
 }
 
 .hero-detail-grid{
@@ -388,7 +390,7 @@ hr{
 
 .profile-photo{
   width:100%;
-  height:clamp(310px, 31vw, 390px);
+  height:clamp(360px, 34vw, 450px);
   object-fit:cover;
   object-position:center 18%;
   border-radius:18px;
@@ -400,7 +402,7 @@ hr{
   display:flex;
   flex-wrap:wrap;
   gap:.55rem;
-  margin-top:.8rem;
+  margin-top:1rem;
 }
 
 .profile-caption span{
@@ -416,6 +418,9 @@ hr{
 .hero-aside .profile-card{
   width:100%;
   justify-self:center;
+  height:100%;
+  display:flex;
+  flex-direction:column;
 }
 
 .hero-panel{
@@ -467,6 +472,21 @@ hr{
 .hero .metric strong,
 .hero .tag-list li{
   color:var(--hero-text);
+}
+
+.hero-detail-grid .hero-panel{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.hero-detail-grid .hero-panel-inline{
+  margin-top:0;
+}
+
+.hero-core-panel .tag-list{
+  flex:1;
+  align-content:flex-start;
 }
 
 .tag-list{
@@ -655,6 +675,10 @@ hr{
 }
 
 .project-card-featured{
+  grid-column:span 2;
+}
+
+.project-card-wide{
   grid-column:span 2;
 }
 
@@ -900,7 +924,7 @@ hr{
   }
 
   .profile-photo{
-    height:clamp(290px, 34vw, 360px);
+    height:clamp(320px, 36vw, 400px);
   }
 }
 
@@ -927,6 +951,10 @@ hr{
   }
 
   .project-card-featured{
+    grid-column:span 1;
+  }
+
+  .project-card-wide{
     grid-column:span 1;
   }
 
@@ -1020,7 +1048,7 @@ hr{
   }
 
   .profile-photo{
-    height:300px;
+    height:320px;
   }
 }
 
@@ -1053,7 +1081,7 @@ hr{
   }
 
   .profile-photo{
-    height:260px;
+    height:280px;
   }
 
   .project-list-page .project-image-wrap,
