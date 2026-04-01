@@ -266,3 +266,13 @@ Recommended:
 * **Email:** [cherryaugusta@gmail.com](mailto:cherryaugusta@gmail.com) 
 * **LinkedIn:** [https://www.linkedin.com/in/cherry-augusta-3957a916](https://www.linkedin.com/in/cherry-augusta-3957a916) 
 * **GitHub:** [https://github.com/cherryaugusta](https://github.com/cherryaugusta)
+
+## License
+
+This project is licensed under the MIT License.
+
+Copyright (c) 2026 Cherry Augusta
+
+Permission is granted to use, copy, modify, and distribute this software with minimal restrictions.
+
+See the [LICENSE](./LICENSE) file for full details.
