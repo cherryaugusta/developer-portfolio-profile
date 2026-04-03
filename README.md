@@ -272,8 +272,4 @@ Recommended:
 
 This project is licensed under the MIT License.
 
-Copyright (c) 2026 Cherry Augusta
-
-Permission is granted to use, copy, modify, and distribute this software with minimal restrictions.
-
 See the [LICENSE](./LICENSE) file for full details.
