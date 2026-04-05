@@ -474,27 +474,24 @@ hr{
 
 .hero-core-panel{
   margin-top:0;
-  width:100%;
+  width:calc(100% - 14px);
+  margin-left:14px;
   height:100%;
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
-  padding:1.15rem 1.2rem;
+  padding:1.2rem 1.25rem 1.3rem;
 }
 
 .hero-core-panel h2{
-  max-width:24ch;
+  max-width:none;
   font-size:1.18rem;
-  line-height:1.2;
-  margin-bottom:.8rem;
-}
-
-.hero-core-panel .panel-label{
-  margin-bottom:.45rem;
+  line-height:1.24;
+  margin-bottom:1.25rem;
 }
 
 .hero-core-panel .tag-list-core{
-  margin-top:.1rem;
+  margin-top:.35rem;
   flex:1;
   align-content:start;
 }
@@ -543,8 +540,8 @@ hr{
 
 .tag-list-core{
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:.58rem;
+  grid-template-columns:1fr;
+  gap:.82rem;
   align-content:start;
 }
 
@@ -552,16 +549,17 @@ hr{
   display:flex;
   align-items:center;
   justify-content:flex-start;
-  min-height:38px;
-  padding:.42rem .62rem;
+  min-height:48px;
+  padding:.68rem .9rem;
   border-radius:12px;
   background:rgba(255,255,255,.10);
   border:1px solid rgba(255,255,255,.12);
   color:var(--hero-text);
-  font-size:.82rem;
-  font-weight:500;
-  line-height:1.22;
+  font-size:.94rem;
+  font-weight:600;
+  line-height:1.2;
   letter-spacing:-0.01em;
+  white-space:nowrap;
   margin:0;
 }
 
@@ -988,6 +986,10 @@ hr{
   .hero-project-main img{
     height:clamp(220px, 28vw, 300px);
   }
+
+  .tag-list-core li{
+    font-size:.88rem;
+  }
 }
 
 @media (max-width:1024px){
@@ -1014,8 +1016,15 @@ hr{
   }
 
   .hero-core-panel{
+    width:100%;
+    margin-left:0;
     height:auto;
     min-height:0;
+    padding:1.15rem 1.1rem 1.2rem;
+  }
+
+  .tag-list-core li{
+    white-space:normal;
   }
 
   .cv-side,
@@ -1136,6 +1145,10 @@ hr{
   .hero-project-supporting img{
     height:120px;
   }
+
+  .tag-list-core{
+    gap:.72rem;
+  }
 }
 
 @media (max-width:560px){
@@ -1174,14 +1187,11 @@ hr{
     height:100px;
   }
 
-  .tag-list-core{
-    grid-template-columns:1fr;
-  }
-
   .tag-list-core li{
     min-height:auto;
-    font-size:.84rem;
-    padding:.48rem .68rem;
+    font-size:.88rem;
+    padding:.62rem .78rem;
+    white-space:normal;
   }
 
   .project-list-page .project-image-wrap,
