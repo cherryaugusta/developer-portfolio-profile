@@ -21,6 +21,7 @@
   --hero-text:#f5f9ff;
   --hero-text-soft:#dbe8ff;
   --hero-text-muted:#bfd2f4;
+  --hero-title-accent:#8ec5ff;
   --shadow-xs:0 8px 20px rgba(9,18,32,.06);
   --shadow:0 18px 44px rgba(9,18,32,.08);
   --shadow-strong:0 24px 60px rgba(9,18,32,.14);
@@ -269,6 +270,21 @@ hr{
 .page-hero h1{
   color:var(--hero-text);
   text-shadow:0 2px 18px rgba(0,0,0,.22);
+}
+
+.hero-title-primary,
+.hero-title-secondary{
+  display:block;
+}
+
+.hero-title-primary{
+  color:var(--hero-text);
+}
+
+.hero-title-secondary{
+  color:var(--hero-title-accent);
+  margin-top:.18em;
+  line-height:1.08;
 }
 
 .hero-grid{
