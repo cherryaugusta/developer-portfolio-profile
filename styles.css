@@ -282,7 +282,7 @@ hr{
 
 .hero-grid-enhanced{
   grid-template-columns:1.18fr .96fr;
-  align-items:stretch;
+  align-items:start;
 }
 
 .hero-copy{
@@ -292,18 +292,22 @@ hr{
 
 .hero-aside{
   display:grid;
-  gap:1rem;
+  gap:1.25rem;
   align-content:start;
-  align-self:stretch;
+  align-self:start;
+  width:100%;
+}
+
+.hero-aside > *{
+  width:100%;
 }
 
 .hero-detail-grid{
-  grid-column:1 / -1;
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:1fr;
   gap:1.25rem;
   align-items:stretch;
-  margin-top:1.45rem;
+  width:100%;
 }
 
 .eyebrow,
@@ -382,6 +386,7 @@ hr{
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
   max-width:720px;
+  width:100%;
 }
 
 .profile-card-compact{
@@ -450,6 +455,7 @@ hr{
   height:100%;
   display:flex;
   flex-direction:column;
+  max-width:none;
 }
 
 .hero-panel{
@@ -460,10 +466,12 @@ hr{
   box-shadow:var(--shadow);
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
+  width:100%;
+  max-width:none;
 }
 
 .hero-panel-inline{
-  margin-top:1.4rem;
+  margin-top:0;
 }
 
 .hero-panel h2{
@@ -504,18 +512,16 @@ hr{
 }
 
 .hero-detail-grid .hero-panel{
+  width:100%;
   height:100%;
   display:flex;
   flex-direction:column;
 }
 
-.hero-detail-grid .hero-panel-inline{
-  margin-top:0;
-}
-
 .hero-core-panel .tag-list{
   flex:1;
   align-content:flex-start;
+  width:100%;
 }
 
 .tag-list{
