@@ -281,24 +281,25 @@ hr{
 }
 
 .hero-grid-enhanced{
-  grid-template-columns:1.18fr .96fr;
-  align-items:stretch;
+  grid-template-columns:minmax(0,1.18fr) minmax(360px,.96fr);
+  align-items:start;
+}
+
+.hero-copy,
+.hero-aside{
+  min-width:0;
 }
 
 .hero-copy{
   max-width:none;
   color:var(--hero-text-soft);
-  display:flex;
-  flex-direction:column;
-  align-self:stretch;
 }
 
 .hero-aside{
-  display:flex;
-  flex-direction:column;
+  display:grid;
   gap:1.25rem;
   align-content:start;
-  align-self:stretch;
+  align-self:start;
 }
 
 .eyebrow,
@@ -439,17 +440,10 @@ hr{
   font-weight:600;
 }
 
-.hero-aside .profile-card{
-  width:100%;
-  justify-self:center;
-  height:auto;
-  display:flex;
-  flex-direction:column;
-}
-
 .hero-aside .profile-card,
-.hero-core-panel-below-visual{
+.hero-core-panel{
   width:100%;
+  justify-self:stretch;
 }
 
 .hero-panel{
@@ -472,40 +466,23 @@ hr{
   margin-bottom:.8rem;
 }
 
+.hero-core-panel{
+  margin-top:0;
+}
+
 .hero-summary-panel{
   margin-top:0;
 }
 
-.hero-summary-panel-full{
-  width:100%;
+.hero-summary-panel-wide{
+  grid-column:1 / -1;
   margin-top:1.45rem;
-}
-
-.hero-summary-panel-full .hero-summary-text{
-  max-width:none;
 }
 
 .hero-summary-text{
   color:var(--hero-text-soft);
   margin:0;
   max-width:none;
-}
-
-.hero-core-panel-below-visual{
-  margin-top:0;
-}
-
-.hero-core-panel-below-visual .tag-list{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:.7rem;
-  align-items:start;
-}
-
-.hero-core-panel-below-visual .tag-list li{
-  width:100%;
-  border-radius:14px;
-  padding:.62rem .85rem;
 }
 
 .hero .hero-copy p,
@@ -527,6 +504,10 @@ hr{
 .hero .metric strong,
 .hero .tag-list li{
   color:var(--hero-text);
+}
+
+.hero-core-panel .tag-list{
+  align-content:flex-start;
 }
 
 .tag-list{
@@ -1000,6 +981,11 @@ hr{
     align-items:flex-start;
   }
 
+  .hero-summary-panel-wide{
+    grid-column:auto;
+    margin-top:0;
+  }
+
   .project-list-page .project-image-wrap,
   .project-list-page .project-image-wrap-large{
     min-height:400px;
@@ -1093,10 +1079,6 @@ hr{
 
   .hero-project-supporting img{
     height:120px;
-  }
-
-  .hero-core-panel-below-visual .tag-list{
-    grid-template-columns:1fr;
   }
 }
 
