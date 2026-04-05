@@ -474,8 +474,8 @@ hr{
 
 .hero-core-panel{
   margin-top:0;
-  width:calc(100% - 22px);
-  margin-left:22px;
+  width:calc(100% - 28px);
+  margin-left:28px;
   height:auto;
   min-height:0;
   display:flex;
