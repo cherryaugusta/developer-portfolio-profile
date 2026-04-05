@@ -282,32 +282,23 @@ hr{
 
 .hero-grid-enhanced{
   grid-template-columns:1.18fr .96fr;
-  align-items:start;
+  align-items:stretch;
 }
 
 .hero-copy{
-  max-width:760px;
+  max-width:none;
   color:var(--hero-text-soft);
+  display:flex;
+  flex-direction:column;
+  align-self:stretch;
 }
 
 .hero-aside{
-  display:grid;
+  display:flex;
+  flex-direction:column;
   gap:1.25rem;
   align-content:start;
-  align-self:start;
-  width:100%;
-}
-
-.hero-aside > *{
-  width:100%;
-}
-
-.hero-detail-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:1.25rem;
-  align-items:stretch;
-  width:100%;
+  align-self:stretch;
 }
 
 .eyebrow,
@@ -386,7 +377,6 @@ hr{
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
   max-width:720px;
-  width:100%;
 }
 
 .profile-card-compact{
@@ -452,10 +442,14 @@ hr{
 .hero-aside .profile-card{
   width:100%;
   justify-self:center;
-  height:100%;
+  height:auto;
   display:flex;
   flex-direction:column;
-  max-width:none;
+}
+
+.hero-aside .profile-card,
+.hero-core-panel-below-visual{
+  width:100%;
 }
 
 .hero-panel{
@@ -466,12 +460,10 @@ hr{
   box-shadow:var(--shadow);
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
-  width:100%;
-  max-width:none;
 }
 
 .hero-panel-inline{
-  margin-top:0;
+  margin-top:1.4rem;
 }
 
 .hero-panel h2{
@@ -484,10 +476,36 @@ hr{
   margin-top:0;
 }
 
+.hero-summary-panel-full{
+  width:100%;
+  margin-top:1.45rem;
+}
+
+.hero-summary-panel-full .hero-summary-text{
+  max-width:none;
+}
+
 .hero-summary-text{
   color:var(--hero-text-soft);
   margin:0;
-  max-width:72ch;
+  max-width:none;
+}
+
+.hero-core-panel-below-visual{
+  margin-top:0;
+}
+
+.hero-core-panel-below-visual .tag-list{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:.7rem;
+  align-items:start;
+}
+
+.hero-core-panel-below-visual .tag-list li{
+  width:100%;
+  border-radius:14px;
+  padding:.62rem .85rem;
 }
 
 .hero .hero-copy p,
@@ -509,19 +527,6 @@ hr{
 .hero .metric strong,
 .hero .tag-list li{
   color:var(--hero-text);
-}
-
-.hero-detail-grid .hero-panel{
-  width:100%;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-}
-
-.hero-core-panel .tag-list{
-  flex:1;
-  align-content:flex-start;
-  width:100%;
 }
 
 .tag-list{
@@ -976,10 +981,6 @@ hr{
     grid-template-columns:1fr;
   }
 
-  .hero-detail-grid{
-    grid-template-columns:1fr;
-  }
-
   .cv-side,
   .about-summary-card{
     position:static;
@@ -1092,6 +1093,10 @@ hr{
 
   .hero-project-supporting img{
     height:120px;
+  }
+
+  .hero-core-panel-below-visual .tag-list{
+    grid-template-columns:1fr;
   }
 }
 
