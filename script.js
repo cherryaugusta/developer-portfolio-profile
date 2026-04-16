@@ -1,5 +1,3 @@
-document.documentElement.lang = "en";
-
 const navToggle = document.querySelector(".nav-toggle");
 const primaryNav = document.querySelector("#primary-nav");
 const currentYear = document.querySelector("#current-year");
@@ -53,9 +51,7 @@ if (navToggle && primaryNav) {
 
   window.addEventListener("resize", () => {
     if (window.innerWidth > 760) {
-      primaryNav.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-      navToggle.setAttribute("aria-label", "Open navigation");
+      closeNav();
     }
   });
 }
