@@ -1065,10 +1065,6 @@ hr{
   box-shadow:var(--shadow-xs);
 }
 
-.contact-fact-span-full{
-  grid-column:1 / -1;
-}
-
 .contact-fact-label{
   display:block;
   font-size:.78rem;
@@ -1131,6 +1127,15 @@ hr{
 .contact-preferences-card{
   width:100%;
   padding:1.35rem;
+}
+
+.contact-work-preference-card{
+  width:100%;
+  padding:1.35rem;
+}
+
+.contact-work-preference-card p:last-child{
+  margin-bottom:0;
 }
 
 .contact-cta-section{
@@ -1305,10 +1310,6 @@ hr{
   .contact-primary-extras{
     grid-template-columns:1fr;
   }
-
-  .contact-fact-span-full{
-    grid-column:auto;
-  }
 }
 
 @media (max-width:760px){
@@ -1420,7 +1421,8 @@ hr{
 
   .contact-primary-card,
   .contact-action-card,
-  .contact-preferences-card{
+  .contact-preferences-card,
+  .contact-work-preference-card{
     padding:1.25rem;
   }
 
