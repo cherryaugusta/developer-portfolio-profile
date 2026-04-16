@@ -316,10 +316,9 @@ hr{
 .hero-aside-stack{
   display:flex;
   flex-direction:column;
-  gap:1rem;
+  gap:1.1rem;
   align-self:start;
-  align-content:stretch;
-  min-height:0;
+  width:100%;
 }
 
 .eyebrow,
@@ -471,16 +470,11 @@ hr{
 .hero-aside > .hero-summary-panel,
 .hero-aside-stack > .profile-card,
 .hero-aside-stack > .hero-core-panel,
-.hero-aside-stack > .hero-summary-panel{
-  width:100%;
-  max-width:none;
-  justify-self:stretch;
-  align-self:stretch;
-}
-
+.hero-aside-stack > .hero-summary-panel,
 .hero-stack-card{
   width:100%;
   max-width:none;
+  margin:0;
 }
 
 .hero-panel{
@@ -500,14 +494,13 @@ hr{
 }
 
 .hero-summary-panel{
-  margin-top:0;
-  padding:1.08rem 1.08rem 1.02rem;
+  padding:1.08rem 1.1rem 1.02rem;
 }
 
 .hero-summary-panel h2{
-  font-size:1.16rem;
+  font-size:1.18rem;
   line-height:1.2;
-  margin-bottom:.62rem;
+  margin-bottom:.65rem;
 }
 
 .hero-summary-text{
@@ -517,31 +510,28 @@ hr{
 }
 
 .hero-core-panel{
-  margin-top:0;
   width:100%;
-  margin-left:0;
+  margin:0;
   min-height:0;
-  height:auto;
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
-  padding:.9rem .98rem .95rem;
+  padding:.95rem 1rem;
 }
 
 .hero-core-panel h2{
   max-width:none;
-  font-size:1.06rem;
+  font-size:1.08rem;
   line-height:1.18;
-  margin-bottom:.58rem;
+  margin-bottom:.62rem;
 }
 
 .hero-core-panel .panel-label{
-  margin-bottom:.42rem;
+  margin-bottom:.45rem;
 }
 
 .hero-core-panel .tag-list-core{
   margin-top:0;
-  flex:initial;
   align-content:start;
 }
 
@@ -575,7 +565,7 @@ hr{
 .tag-list-core{
   display:grid;
   grid-template-columns:1fr;
-  gap:.38rem;
+  gap:.42rem;
   align-content:start;
 }
 
@@ -585,14 +575,14 @@ hr{
   justify-content:center;
   text-align:center;
   min-height:34px;
-  padding:.4rem .7rem;
+  padding:.42rem .72rem;
   border-radius:12px;
   background:rgba(255,255,255,.10);
   border:1px solid rgba(255,255,255,.12);
   color:var(--hero-text);
-  font-size:.87rem;
+  font-size:.88rem;
   font-weight:600;
-  line-height:1.15;
+  line-height:1.16;
   letter-spacing:-0.01em;
   white-space:normal;
   margin:0;
@@ -1164,19 +1154,10 @@ hr{
 
   .hero-aside,
   .hero-aside-stack{
-    display:grid;
-    grid-template-rows:auto;
+    display:flex;
+    flex-direction:column;
     align-self:start;
     min-height:auto;
-  }
-
-  .hero-core-panel{
-    width:100%;
-    margin-left:0;
-    height:auto;
-    min-height:0;
-    padding:1rem;
-    justify-content:flex-start;
   }
 
   .hero-summary-panel{
@@ -1186,6 +1167,10 @@ hr{
   .hero-summary-panel h2,
   .hero-core-panel h2{
     font-size:1.12rem;
+  }
+
+  .hero-core-panel{
+    padding:1rem;
   }
 
   .tag-list-core li{
