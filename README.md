@@ -1,16 +1,8 @@
 # Cherry Augusta | Software Engineer Portfolio
 
-This repository contains my GitHub Pages portfolio website.
+Software Engineer with portfolio work across Python, Django, TypeScript, React, Angular, PostgreSQL, Redis, Docker, backend APIs, full-stack web applications, and reviewable AI-assisted workflow systems.
 
-It presents project work most relevant to **Software Engineer**, **Backend Engineer**, **Full-Stack Engineer**, **Python Developer**, and **AI Platform Engineer** roles, with the strongest emphasis on:
-
-- backend systems
-- workflow-heavy product design
-- auditability
-- evaluation
-- grounded retrieval
-- maintainable repository structure
-- reviewer-friendly technical communication
+This repository contains my GitHub Pages portfolio website and selected project highlights.
 
 ## Live links
 
@@ -19,24 +11,38 @@ It presents project work most relevant to **Software Engineer**, **Backend Engin
 - **LinkedIn:** [linkedin.com/in/cherry-augusta-3957a916](https://www.linkedin.com/in/cherry-augusta-3957a916)
 - **Portfolio repository:** [github.com/cherryaugusta/developer-portfolio-profile](https://github.com/cherryaugusta/developer-portfolio-profile)
 
-## Portfolio positioning
+## Portfolio profile
 
-The strongest projects in this portfolio are workflow-heavy systems rather than generic demos. They show backend and full-stack engineering through:
+The portfolio is built to show software engineering breadth as well as deeper workflow-heavy systems.
 
-- Django and Django REST Framework APIs
-- React and TypeScript frontend integration
-- PostgreSQL, Redis, Celery, and Channels-backed workflows
-- grounded retrieval and source visibility
-- approval flows and review routing
-- audit trails and evaluation runs
-- production-minded documentation and local reproducibility
+Core areas evidenced across the repositories include:
 
-## Additional information
+- Python
+- Django
+- Django REST Framework
+- TypeScript
+- React
+- Angular
+- PostgreSQL
+- Redis
+- Celery
+- Django Channels
+- Docker Compose
+- OpenAPI
+- Pytest
+- Vitest
+- GitHub Actions
 
-- **Location:** London, United Kingdom
-- **Right to work:** Indefinite Leave to Remain (Settlement), UK
-- **Languages:** English (Fluent), Indonesian (Native), Malay (Native), Norwegian Bokmål (Basic)
-- **Target roles:** Software Engineer, Backend Engineer, Full-Stack Engineer, Python Developer, AI Platform Engineer
+## What the portfolio highlights
+
+- backend API engineering with Django and DRF
+- frontend delivery in React and Angular
+- typed TypeScript integration across UI and API boundaries
+- PostgreSQL and Redis-backed workflows
+- Celery, Channels, WebSockets, and async behaviour
+- Docker-based local reproducibility
+- workflow-heavy product design
+- auditability, evaluation, and review routing in selected AI-assisted systems
 
 ## Project tiers
 
@@ -69,6 +75,14 @@ Internal AI governance control plane for prompt and model versioning, release ca
 - [GreenOps](https://github.com/cherryaugusta/greenops-carbon-accounting-platform)
 - [TradeFlow](https://github.com/cherryaugusta/TradeFlow)
 - [Gmail MCP Server](https://github.com/cherryaugusta/gmail-mcp-server)
+
+### Angular and contract-aware repositories
+
+- [EcoRoute LEZ Optimiser](https://github.com/cherryaugusta/EcoRoute-LEZ-Optimiser)
+- [OpsSentinel](https://github.com/cherryaugusta/OpsSentinel)
+- [PolicyPulse](https://github.com/cherryaugusta/policypulse)
+- [FinCrime GraphOps](https://github.com/cherryaugusta/fincrime-graphops)
+- [LondonPlan RAG](https://github.com/cherryaugusta/londonplan-rag)
 
 ### Supporting
 
@@ -106,7 +120,7 @@ developer-portfolio-profile/
 
 ## Design and implementation notes
 
-This portfolio is intentionally built as a static site for **GitHub Pages** using:
+This portfolio is intentionally built as a static site for GitHub Pages using:
 
 * plain HTML
 * plain CSS
@@ -116,55 +130,10 @@ Reasons for this approach:
 
 * zero-cost default hosting
 * low maintenance burden
-* strong portability
 * fast loading
+* strong portability
 * easy inspection during technical review
-* no dependency on paid templates, hosted form providers, or external app hosting
-
-## Screenshot organisation
-
-Current screenshot structure used by the site:
-
-```text
-screenshots/
-├── consumer-duty-evidence-engine/
-│   └── case-detail-weak-support.png
-├── meridian-ledger/
-│   └── grounded-answer-with-sources.png
-├── agentic-compliance-auditor/
-│   └── finding-detail-side-by-side.png
-├── ai-model-governance-workbench/
-│   └── release-candidate-blocked.png
-├── sentra-nexus/
-│   └── command-center.png
-├── lawpulse/
-│   └── frontend-selected-clause.png
-├── greenops/
-│   └── frontend-dashboard.png
-└── tradeflow/
-    └── frontend-dashboard.png
-```
-
-Additional screenshot folders can be added later if they become part of the site.
-
-## Accessibility and readability
-
-The site is structured to support:
-
-* semantic HTML
-* keyboard navigation
-* visible focus states
-* skip link
-* readable spacing
-* restrained contrast-safe UI
-* meaningful image alt text
-
-## Contact strategy
-
-The main contact routes are:
-
-* direct email
-* LinkedIn
+* simple deployment and update workflow
 
 ## Local preview
 
@@ -193,14 +162,6 @@ Current live URL:
 [https://cherryaugusta.github.io/developer-portfolio-profile](https://cherryaugusta.github.io/developer-portfolio-profile)
 
 Keep internal links and asset paths relative so the site continues to work correctly under the project-site URL structure.
-
-## Recommended repository settings
-
-* Add a clear repository description
-* Add portfolio-related topics
-* Keep screenshots organised by project
-* Use concise, descriptive alt text in README images
-* Add or update an `assets/og-preview.jpg` social preview image
 
 ## License
 
