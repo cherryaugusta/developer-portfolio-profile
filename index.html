@@ -52,7 +52,7 @@
 
   <main id="main-content">
     <section class="hero">
-      <div class="container hero-grid hero-grid-enhanced">
+      <div class="container hero-grid hero-grid-enhanced" style="align-items:stretch;">
         <div class="hero-copy">
           <p class="eyebrow">London, United Kingdom</p>
           <h1>
@@ -85,8 +85,8 @@
           </div>
         </div>
 
-        <aside class="hero-aside" style="display:flex; flex-direction:column; align-self:stretch; gap:1.1rem; min-height:100%;">
-          <div class="hero-panel hero-summary-panel" aria-label="Professional summary">
+        <aside class="hero-aside" style="display:flex; flex-direction:column; gap:1.1rem; align-self:stretch; min-height:100%;">
+          <div class="hero-panel hero-summary-panel" aria-label="Professional summary" style="width:100%; margin:0;">
             <p class="panel-label">Professional summary</p>
             <h2>Portfolio work centred on strong engineering fundamentals across backend, frontend, and workflow systems</h2>
             <p class="hero-summary-text">
@@ -94,7 +94,7 @@
             </p>
           </div>
 
-          <figure class="profile-card profile-card-compact">
+          <figure class="profile-card profile-card-compact" style="width:100%; max-width:none; margin:0;">
             <div class="hero-project-visual" aria-label="Selected project highlights">
               <div class="hero-project-main">
                 <img
@@ -141,16 +141,16 @@
             </figcaption>
           </figure>
 
-          <div class="hero-panel hero-core-panel" aria-label="Core themes" style="width:100%; margin-left:0; margin-top:auto;">
+          <div class="hero-panel hero-core-panel" aria-label="Core themes" style="width:100%; margin:0; margin-top:auto; padding:.95rem 1rem;">
             <p class="panel-label">Core themes</p>
-            <h2>Backend systems, frontend engineering, typed integration, and reproducible delivery</h2>
-            <ul class="tag-list tag-list-core">
-              <li>Python application engineering</li>
-              <li>Django and DRF APIs</li>
-              <li>React and Angular frontends</li>
-              <li>TypeScript contracts and UI state</li>
-              <li>PostgreSQL, Redis, Celery, Channels</li>
-              <li>Docker-based local reproducibility</li>
+            <h2 style="margin-bottom:.65rem;">Backend systems, frontend engineering, typed integration, and reproducible delivery</h2>
+            <ul class="tag-list tag-list-core" style="gap:.45rem;">
+              <li style="min-height:36px; padding:.42rem .72rem;">Python application engineering</li>
+              <li style="min-height:36px; padding:.42rem .72rem;">Django and DRF APIs</li>
+              <li style="min-height:36px; padding:.42rem .72rem;">React and Angular frontends</li>
+              <li style="min-height:36px; padding:.42rem .72rem;">TypeScript contracts and UI state</li>
+              <li style="min-height:36px; padding:.42rem .72rem;">PostgreSQL, Redis, Celery, Channels</li>
+              <li style="min-height:36px; padding:.42rem .72rem;">Docker-based local reproducibility</li>
             </ul>
           </div>
         </aside>
