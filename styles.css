@@ -764,6 +764,14 @@ hr{
   grid-column:span 2;
 }
 
+.project-card-span-full{
+  grid-column:1 / -1;
+}
+
+.card-span-full{
+  grid-column:1 / -1;
+}
+
 .project-list-page .project-card-featured{
   grid-column:span 1;
 }
@@ -918,7 +926,13 @@ hr{
   display:grid;
   grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);
   gap:1.25rem;
-  align-items:stretch;
+  align-items:start;
+}
+
+.contact-side-column{
+  display:grid;
+  gap:1.25rem;
+  align-content:start;
 }
 
 .contact-primary-card{
@@ -935,6 +949,19 @@ hr{
   box-shadow:var(--shadow-strong);
   padding:1.65rem;
   overflow:hidden;
+}
+
+.contact-secondary-card{
+  padding:1.3rem;
+}
+
+.contact-secondary-card .form-actions{
+  margin-top:1rem;
+}
+
+.contact-secondary-card .contact-action-note{
+  margin-top:.9rem;
+  padding-top:.85rem;
 }
 
 .contact-action-card::before{
@@ -1028,6 +1055,10 @@ hr{
   margin-top:1.1rem;
   padding-top:1rem;
   border-top:1px solid rgba(255,255,255,.12);
+}
+
+.contact-preferences-card{
+  width:100%;
 }
 
 .cta-panel{
@@ -1169,7 +1200,9 @@ hr{
     position:static;
   }
 
-  .project-card-featured{
+  .project-card-featured,
+  .project-card-span-full,
+  .card-span-full{
     grid-column:span 1;
   }
 
@@ -1282,6 +1315,10 @@ hr{
   .contact-primary-card,
   .contact-action-card{
     padding:1.25rem;
+  }
+
+  .contact-secondary-card{
+    padding:1.15rem;
   }
 }
 

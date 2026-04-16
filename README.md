@@ -1,8 +1,6 @@
 # Cherry Augusta | Software Engineer Portfolio
 
-Software Engineer with portfolio work across Python, Django, TypeScript, React, Angular, PostgreSQL, Redis, Docker, backend APIs, full-stack web applications, and reviewable AI-assisted workflow systems.
-
-This repository contains my GitHub Pages portfolio website and selected project highlights.
+GitHub Pages portfolio website presenting project work across Python, Django, TypeScript, React, Angular, PostgreSQL, Redis, Docker, backend APIs, full-stack applications, workflow-heavy systems, and reviewable AI-assisted products.
 
 ## Live links
 
@@ -11,42 +9,28 @@ This repository contains my GitHub Pages portfolio website and selected project 
 - **LinkedIn:** [linkedin.com/in/cherry-augusta-3957a916](https://www.linkedin.com/in/cherry-augusta-3957a916)
 - **Portfolio repository:** [github.com/cherryaugusta/developer-portfolio-profile](https://github.com/cherryaugusta/developer-portfolio-profile)
 
-## Portfolio profile
+## Portfolio focus
 
-The portfolio is built to show software engineering breadth as well as deeper workflow-heavy systems.
+The portfolio is structured to show credible engineering breadth and clear project hierarchy.
 
-Core areas evidenced across the repositories include:
+The strongest repeated evidence across the repositories includes:
 
-- Python
-- Django
-- Django REST Framework
-- TypeScript
-- React
-- Angular
-- PostgreSQL
-- Redis
-- Celery
-- Django Channels
-- Docker Compose
-- OpenAPI
-- Pytest
-- Vitest
-- GitHub Actions
-
-## What the portfolio highlights
-
-- backend API engineering with Django and DRF
-- frontend delivery in React and Angular
-- typed TypeScript integration across UI and API boundaries
+- Python application engineering
+- Django and Django REST Framework
+- TypeScript-based frontend delivery
+- React and Angular
 - PostgreSQL and Redis-backed workflows
-- Celery, Channels, WebSockets, and async behaviour
+- Celery, Django Channels, and async processing
 - Docker-based local reproducibility
-- workflow-heavy product design
-- auditability, evaluation, and review routing in selected AI-assisted systems
+- workflow-heavy system design
+- typed frontend-backend integration
+- reviewable AI-assisted workflows with auditability and evaluation-oriented patterns
 
-## Project tiers
+## Project groups
 
-### Flagship
+### Flagship projects
+
+These projects provide the strongest combined evidence across backend systems, frontend delivery, full-stack application design, workflow control, and technical reviewability.
 
 #### Consumer Duty Evidence Engine
 Repository: [consumer-duty-evidence-engine](https://github.com/cherryaugusta/consumer-duty-evidence-engine)
@@ -68,7 +52,9 @@ Repository: [ai-model-governance-workbench](https://github.com/cherryaugusta/ai-
 
 Internal AI governance control plane for prompt and model versioning, release candidates, evaluation gates, approvals, incidents, rollback, and audit history.
 
-### Featured
+### Featured projects
+
+These projects add further evidence across frontend architecture, full-stack workflow design, and practical Python integration.
 
 - [Sentra Nexus](https://github.com/cherryaugusta/sentra-nexus)
 - [LawPulse](https://github.com/cherryaugusta/lawpulse)
@@ -76,7 +62,9 @@ Internal AI governance control plane for prompt and model versioning, release ca
 - [TradeFlow](https://github.com/cherryaugusta/TradeFlow)
 - [Gmail MCP Server](https://github.com/cherryaugusta/gmail-mcp-server)
 
-### Angular and contract-aware repositories
+### Angular and contract-aware projects
+
+These repositories show Angular, TypeScript, Django, OpenAPI-aware integration, and reproducible local execution as part of the wider portfolio.
 
 - [EcoRoute LEZ Optimiser](https://github.com/cherryaugusta/EcoRoute-LEZ-Optimiser)
 - [OpsSentinel](https://github.com/cherryaugusta/OpsSentinel)
@@ -84,13 +72,43 @@ Internal AI governance control plane for prompt and model versioning, release ca
 - [FinCrime GraphOps](https://github.com/cherryaugusta/fincrime-graphops)
 - [LondonPlan RAG](https://github.com/cherryaugusta/londonplan-rag)
 
-### Supporting
+### Supporting projects
+
+These projects reinforce Python, analytics, and machine learning foundations.
 
 - [Python Contacts Manager](https://github.com/cherryaugusta/python-contacts-manager)
 - [Advanced Python Calculator](https://github.com/cherryaugusta/advanced-python-calculator)
 - [GloBox A/B Testing Analysis](https://github.com/cherryaugusta/GloBox_A-B_Testing_Analysis)
 - [Credit Card Customer Segmentation](https://github.com/cherryaugusta/Credit-Card-Customer-Segmentation)
 - [Predicting Heart Disease](https://github.com/cherryaugusta/Predicting-Heart-Disease)
+
+## Website implementation
+
+This portfolio website is intentionally built as a static GitHub Pages site using:
+
+- plain HTML
+- plain CSS
+- plain JavaScript
+
+This keeps the site:
+
+- zero-cost by default
+- easy to maintain
+- easy to inspect during review
+- fast to load
+- simple to update
+- compatible with GitHub Pages without extra hosting services
+
+## Important architecture distinction
+
+This repository contains the **portfolio website**, not the runtime infrastructure for the showcased applications.
+
+That distinction matters:
+
+- the portfolio website itself is a static site hosted on GitHub Pages
+- the showcased Django, React, Angular, Python, and workflow-heavy systems are separate project repositories
+- some showcased projects represent full-stack or local-tooling architectures that require their own runtime environments beyond GitHub Pages
+- the portfolio site is intentionally static so the presentation layer stays low-maintenance and reliable
 
 ## Repository structure
 
@@ -115,29 +133,14 @@ developer-portfolio-profile/
     ├── sentra-nexus/
     ├── lawpulse/
     ├── greenops/
-    └── tradeflow/
-````
-
-## Design and implementation notes
-
-This portfolio is intentionally built as a static site for GitHub Pages using:
-
-* plain HTML
-* plain CSS
-* plain JavaScript
-
-Reasons for this approach:
-
-* zero-cost default hosting
-* low maintenance burden
-* fast loading
-* strong portability
-* easy inspection during technical review
-* simple deployment and update workflow
+    ├── tradeflow/
+    └── gmail-mcp-server/
+        └── mcp-server-running.png
+```
 
 ## Local preview
 
-Run all commands below from the portfolio repository root.
+Run from the repository root:
 
 ```powershell
 python -m http.server 8080
@@ -153,11 +156,11 @@ This is a long-running process.
 
 Press `CTRL + C` when you are finished previewing the site.
 
-## GitHub Pages deployment notes
+## GitHub Pages notes
 
-This repository is designed for the GitHub Pages project-site model.
+This repository uses the GitHub Pages project-site model.
 
-Current live URL:
+Live URL:
 
 [https://cherryaugusta.github.io/developer-portfolio-profile](https://cherryaugusta.github.io/developer-portfolio-profile)
 

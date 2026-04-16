@@ -64,8 +64,8 @@
     <section class="section">
       <div class="container">
         <article class="card note-card">
-          <p class="section-kicker">How to read this page</p>
-          <h2>Project tiers show different kinds of engineering evidence</h2>
+          <p class="section-kicker">Project structure</p>
+          <h2>Project groups across the portfolio</h2>
           <p><strong>Flagship</strong> projects provide the strongest combined evidence across Python, Django, React, TypeScript, backend architecture, workflow design, and operational depth.</p>
           <p><strong>Featured</strong> projects extend that picture with strong frontend architecture, full-stack delivery, and practical Python integration.</p>
           <p><strong>Angular and contract-aware projects</strong> show typed frontend-backend integration, OpenAPI-aware delivery, Docker-based reproducibility, and secure-by-design repository structure.</p>
@@ -78,8 +78,7 @@
       <div class="container">
         <div class="section-intro">
           <p class="section-kicker">Flagship</p>
-          <h2>Lead projects</h2>
-          <p>These repositories are the strongest overall evidence for software engineering roles that value backend systems, frontend delivery, full-stack applications, workflow control, and technical reviewability.</p>
+          <h2>Flagship projects</h2>
         </div>
 
         <div class="project-list project-list-page">
@@ -243,7 +242,10 @@
             </div>
           </article>
 
-          <article class="project-card project-card-featured">
+          <article class="project-card project-card-featured project-card-with-image">
+            <div class="project-image-wrap">
+              <img src=“screenshots/gmail-mcp-server/mcp-server-running.png” alt=“MCP server running locally” width=“1600” height=“900” loading=“lazy” decoding=“async”>
+            </div>
             <div class="project-content">
               <div class="project-meta">
                 <span class="pill">Featured</span>
@@ -252,7 +254,7 @@
               </div>
               <h3><a href="https://github.com/cherryaugusta/gmail-mcp-server" target="_blank" rel="noopener noreferrer">Gmail MCP Server</a></h3>
               <p class="stack">Python · FastMCP · Gmail API · OAuth 2.0 Desktop · Local stdio transport</p>
-              <p>Windows-first Python MCP server for Gmail that reads unread emails and creates correctly threaded draft replies using the official Gmail API, OAuth 2.0 Desktop credentials, and local stdio transport.</p>
+              <p>Windows-first Python MCP server for Gmail that reads unread emails and creates correctly threaded draft replies using the Gmail API, OAuth 2.0 Desktop credentials, and local stdio transport.</p>
               <ul>
                 <li>Shows practical Python integration work outside a browser-based full-stack app</li>
                 <li>Shows API integration, local tooling, OAuth setup, and correctly threaded draft creation</li>
@@ -269,7 +271,7 @@
         <div class="section-intro">
           <p class="section-kicker">Angular and contract-aware projects</p>
           <h2>Frontend-backend discipline with Angular, TypeScript, OpenAPI, and Docker</h2>
-          <p>These repositories matter because they show Angular is part of the portfolio in a meaningful way, alongside Django, typed integration, secure defaults, OpenAPI-aware delivery, and reproducible local execution.</p>
+          <p>These repositories show Angular alongside Django, typed integration, OpenAPI-aware delivery, reproducible local execution, and secure-by-design project structure.</p>
         </div>
 
         <div class="card-grid two">
@@ -304,9 +306,9 @@
           </article>
 
           <article class="card">
-            <h3>Why these Angular projects matter</h3>
+            <h3>Angular-focused examples</h3>
             <p class="stack">Angular · TypeScript · Django · OpenAPI · Docker</p>
-            <p>Together these repositories show that Angular is not just a training bullet in the portfolio. It appears in typed frontend-backend systems, documented APIs, Docker-based environments, health-aware applications, and security-conscious project structure.</p>
+            <p>Together these repositories show Angular in typed frontend-backend systems, documented APIs, Docker-based environments, health-aware applications, and security-conscious project structure.</p>
           </article>
         </div>
       </div>
@@ -345,7 +347,7 @@
             <p>Unsupervised machine learning analysis using preprocessing, scaling, K-means clustering, cluster interpretation, and segment-led business recommendation framing.</p>
           </article>
 
-          <article class="card">
+          <article class="card card-span-full">
             <h3><a href="https://github.com/cherryaugusta/Predicting-Heart-Disease" target="_blank" rel="noopener noreferrer">Predicting Heart Disease</a></h3>
             <p class="stack">Python · Scikit-learn · KNN · Grid search · Data cleaning</p>
             <p>Supervised machine learning project using exploratory analysis, imputation, feature selection, KNN modelling, hyperparameter tuning, and evaluation for a heart disease prediction dataset.</p>
