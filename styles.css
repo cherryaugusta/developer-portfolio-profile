@@ -966,8 +966,10 @@ hr{
 
 .contact-side-column{
   display:grid;
+  grid-template-rows:auto 1fr;
   gap:1rem;
   align-content:start;
+  align-self:stretch;
 }
 
 .contact-primary-card{
@@ -1127,15 +1129,21 @@ hr{
 .contact-preferences-card{
   width:100%;
   padding:1.35rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  min-height:100%;
 }
 
 .contact-work-preference-card{
+  grid-column:1 / -1;
   width:100%;
   padding:1.35rem;
 }
 
 .contact-work-preference-card p:last-child{
   margin-bottom:0;
+  max-width:72ch;
 }
 
 .contact-cta-section{
@@ -1309,6 +1317,19 @@ hr{
   .contact-facts,
   .contact-primary-extras{
     grid-template-columns:1fr;
+  }
+
+  .contact-side-column{
+    grid-template-rows:auto auto;
+    align-self:start;
+  }
+
+  .contact-preferences-card{
+    min-height:auto;
+  }
+
+  .contact-work-preference-card{
+    grid-column:auto;
   }
 }
 
