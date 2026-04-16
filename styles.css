@@ -644,7 +644,7 @@ hr{
 }
 
 .section-intro{
-  margin-bottom:1.8rem;
+  margin-bottom:.8rem;
 }
 
 .section-intro > p:last-child{
@@ -960,25 +960,25 @@ hr{
 .contact-layout{
   display:grid;
   grid-template-columns:minmax(0,1.16fr) minmax(320px,.84fr);
-  gap:1.25rem;
+  gap:1.15rem;
   align-items:start;
 }
 
 .contact-side-column{
   display:grid;
-  gap:1.1rem;
+  gap:1rem;
   align-content:start;
 }
 
 .contact-primary-card{
-  padding:1.65rem;
+  padding:1.55rem;
 }
 
 .contact-primary-extras{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:1rem;
-  margin-top:1.25rem;
+  margin-top:1.1rem;
 }
 
 .contact-subpanel{
@@ -1019,7 +1019,7 @@ hr{
 }
 
 .contact-secondary-card{
-  padding:1.3rem;
+  padding:1.25rem;
 }
 
 .contact-secondary-card .form-actions{
@@ -1047,14 +1047,14 @@ hr{
 .contact-intro-note{
   color:var(--muted-strong);
   max-width:65ch;
-  margin-bottom:1.15rem;
+  margin-bottom:1rem;
 }
 
 .contact-facts{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:.9rem;
-  margin-top:1.15rem;
+  margin-top:1.05rem;
 }
 
 .contact-fact{
@@ -1063,6 +1063,10 @@ hr{
   border-radius:16px;
   padding:.95rem 1rem;
   box-shadow:var(--shadow-xs);
+}
+
+.contact-fact-span-full{
+  grid-column:1 / -1;
 }
 
 .contact-fact-label{
@@ -1126,6 +1130,7 @@ hr{
 
 .contact-preferences-card{
   width:100%;
+  padding:1.35rem;
 }
 
 .contact-cta-section{
@@ -1300,6 +1305,10 @@ hr{
   .contact-primary-extras{
     grid-template-columns:1fr;
   }
+
+  .contact-fact-span-full{
+    grid-column:auto;
+  }
 }
 
 @media (max-width:760px){
@@ -1410,7 +1419,8 @@ hr{
   }
 
   .contact-primary-card,
-  .contact-action-card{
+  .contact-action-card,
+  .contact-preferences-card{
     padding:1.25rem;
   }
 
