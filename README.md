@@ -125,6 +125,9 @@ developer-portfolio-profile/
 ├── styles.css
 ├── README.md
 ├── LICENSE
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── assets/
 │   └── og-preview.jpg
 └── screenshots/
