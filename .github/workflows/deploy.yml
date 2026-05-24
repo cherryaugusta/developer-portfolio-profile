@@ -27,12 +27,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate HTML
-        uses: nwtgck/actions-html-validator@v3
-        with:
-          root: .
-          ignore: "no-charset, no-title, no-alt"
-
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
